@@ -8,11 +8,6 @@ The key problem this project solves is:
 
 > How do we transform raw, noisy health data into **interpretable risk insights and actionable recommendations** in a structured, scalable way?
 
-Most solutions either:
-
-* Show raw dashboards (no intelligence), or
-* Use black-box models (no interpretability)
-
 This project bridges that gap by combining **data engineering + machine learning + human-readable insights**.
 
 ---
