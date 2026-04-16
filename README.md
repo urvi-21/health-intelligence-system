@@ -8,7 +8,7 @@ The key problem this project solves is:
 
 > How do we transform raw, noisy health data into **interpretable risk insights and actionable recommendations** in a structured, scalable way?
 
-This project bridges that gap by combining **data engineering + machine learning + human-readable insights**.
+This project bridges that gap by combining **data engineering and machine learning**.
 
 ---
 
