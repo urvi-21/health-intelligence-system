@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: health_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: health_db
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  airflow:
+    image: apache/airflow:2.7.1
+    container_name: airflow
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      _PIP_ADDITIONAL_REQUIREMENTS: "pandas numpy scikit-learn xgboost psycopg2-binary sqlalchemy"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - .:/opt/airflow/project
+    ports:
+      - "8080:8080"
+    command: airflow standalone
+
+volumes:
+  postgres_data:
