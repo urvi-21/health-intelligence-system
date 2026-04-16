@@ -155,41 +155,6 @@ The model predicts **health risk category**, which is:
 
 The dashboard is designed to answer **real user questions**, not just display data.
 
-### Key Features:
-
-#### ✅ Health Status Summary
-
-* Health Score
-* Risk Level (High / Moderate / Low)
-
-#### ✅ Interpretation Layer
-
-* Explains *why* the model predicted a certain risk
-* Based on:
-
-  * Stress
-  * Sleep
-  * Heart rate
-  * Activity
-
-#### ✅ Actionable Recommendations
-
-* Suggests improvements like:
-
-  * Increase sleep
-  * Reduce stress
-  * Improve activity
-
-#### ✅ Trend Visualization
-
-* Smooth health score trend over time
-* Helps identify patterns instead of noise
-
----
-
-## Demo
-
-
 <img width="1907" height="898" alt="Screenshot 2026-04-16 201920" src="https://github.com/user-attachments/assets/da31b580-f8f7-4208-bfe0-59d3f4b74d4f" />
 
 <img width="1919" height="883" alt="Screenshot 2026-04-16 202020" src="https://github.com/user-attachments/assets/c9bec8b8-ab0a-4c5d-ae12-32fd63027d53" />
